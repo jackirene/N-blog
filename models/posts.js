@@ -2,7 +2,7 @@ const marked = require('marked')
 const Post = require('../lib/mongo').Post
 const CommentModel = require('./comments')
 
-// 给 post 添加留言数 commentsCount
+// 给 post 添加留言数量 commentsCount
 Post.plugin('addCommentsCount', {
   afterFind: function (posts) {
     return Promise.all(posts.map(function (post) {
