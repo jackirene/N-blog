@@ -18,7 +18,7 @@ router.post('/', checkNotLogin, function (req, res, next) {
   // 校验参数
   try {
     if (!name.length) {
-      throw new Error('请填写用户名')
+      throw new Error('请填写你的用户名')
     }
     if (!password.length) {
       throw new Error('请填写密码')
