@@ -12,12 +12,12 @@ Comment.plugin('contentToHtml', {
 })
 
 module.exports = {
-  // 创建一个留言
+  // 创建1个留言
   create: function create (comment) {
     return Comment.create(comment).exec()
   },
 
-  // 通过留言 id 获取一个留言
+  // 通过留言 id 获取1个留言
   getCommentById: function getCommentById (commentId) {
     return Comment.findOne({ _id: commentId }).exec()
   },
